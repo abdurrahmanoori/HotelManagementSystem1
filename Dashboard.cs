@@ -17,14 +17,42 @@ namespace HotelManagementSystem1
             InitializeComponent();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void Dashboard_Load(object sender, EventArgs e)
         {
 
+            panelMoving.Visible = false;
+     
         }
 
-        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        private void btnAddRoom_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            panelMoving.Left = btnAddRoom.Left;
+            panelMoving.Visible = true;
         }
+
+        private void btnCustReg_Click(object sender, EventArgs e)
+        {
+            panelMoving.Left = btnCustReg.Left;
+            panelMoving.Visible = true;
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            panelMoving.Left = btnCheckOut.Left;
+            panelMoving.Visible = true;
+        }
+
+        private void btnCustDetail_Click(object sender, EventArgs e)
+        {
+            panelMoving.Left = btnCustDetail.Left;
+            panelMoving.Visible = true;
+        }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            panelMoving.Left = btnEmployee.Left;
+            panelMoving.Visible = true;
+        }
+
     }
 }
