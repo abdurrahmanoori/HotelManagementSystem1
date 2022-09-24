@@ -208,6 +208,7 @@
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.Size = new System.Drawing.Size(37, 36);
             this.guna2CircleButton1.TabIndex = 0;
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
             // btnMinimize
             // 
@@ -224,6 +225,7 @@
             this.btnMinimize.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnMinimize.Size = new System.Drawing.Size(46, 52);
             this.btnMinimize.TabIndex = 0;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // Dashboard
             // 

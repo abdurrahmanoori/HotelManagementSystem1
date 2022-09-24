@@ -54,5 +54,14 @@ namespace HotelManagementSystem1
             panelMoving.Visible = true;
         }
 
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
