@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelMoving = new Guna.UI2.WinForms.Guna2Panel();
@@ -39,7 +40,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnMinimize = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_AddRoom1 = new HotelManagementSystem1.All_User_Control.UC_AddRoom();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -187,9 +191,13 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(1, 107);
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.uC_AddRoom1);
+            this.panel2.Location = new System.Drawing.Point(2, 100);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1217, 339);
+            this.panel2.Size = new System.Drawing.Size(1310, 467);
             this.panel2.TabIndex = 0;
             // 
             // guna2CircleButton1
@@ -227,20 +235,35 @@
             this.btnMinimize.TabIndex = 0;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // uC_AddRoom1
+            // 
+            this.uC_AddRoom1.BackColor = System.Drawing.Color.White;
+            this.uC_AddRoom1.Location = new System.Drawing.Point(0, 6);
+            this.uC_AddRoom1.Name = "uC_AddRoom1";
+            this.uC_AddRoom1.Size = new System.Drawing.Size(1334, 611);
+            this.uC_AddRoom1.TabIndex = 0;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.ClientSize = new System.Drawing.Size(1219, 451);
+            this.ClientSize = new System.Drawing.Size(1320, 567);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -257,5 +280,7 @@
         private Guna.UI2.WinForms.Guna2CircleButton btnMinimize;
         private Guna.UI2.WinForms.Guna2Button btnAddRoom;
         private Guna.UI2.WinForms.Guna2Panel panelMoving;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private All_User_Control.UC_AddRoom uC_AddRoom1;
     }
 }
