@@ -15,6 +15,7 @@ namespace HotelManagementSystem1
         public Dashboard()
         {
             InitializeComponent();
+            uC_AddRoom1.Visible = false;
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
@@ -28,6 +29,8 @@ namespace HotelManagementSystem1
         {
             panelMoving.Left = btnAddRoom.Left;
             panelMoving.Visible = true;
+            uC_AddRoom1.Visible = true;
+
         }
 
         private void btnCustReg_Click(object sender, EventArgs e)
