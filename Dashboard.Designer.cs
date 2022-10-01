@@ -110,7 +110,7 @@
             this.btnAddRoom.Image = ((System.Drawing.Image)(resources.GetObject("btnAddRoom.Image")));
             this.btnAddRoom.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAddRoom.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddRoom.Location = new System.Drawing.Point(9, 16);
+            this.btnAddRoom.Location = new System.Drawing.Point(9, 12);
             this.btnAddRoom.Name = "btnAddRoom";
             this.btnAddRoom.Size = new System.Drawing.Size(233, 70);
             this.btnAddRoom.TabIndex = 0;

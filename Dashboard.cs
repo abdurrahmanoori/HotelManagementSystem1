@@ -20,7 +20,7 @@ namespace HotelManagementSystem1
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
+            btnAddRoom.PerformClick();
             panelMoving.Visible = false;
      
         }
@@ -66,5 +66,6 @@ namespace HotelManagementSystem1
         {
             Application.Exit();
         }
+
     }
 }
