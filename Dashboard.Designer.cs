@@ -258,11 +258,11 @@
             // 
             // uC_CustomerRegistration1
             // 
-            this.uC_CustomerRegistration1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.uC_CustomerRegistration1.Location = new System.Drawing.Point(-38, 6);
+            this.uC_CustomerRegistration1.BackColor = System.Drawing.Color.White;
+            this.uC_CustomerRegistration1.Location = new System.Drawing.Point(0, 6);
             this.uC_CustomerRegistration1.Name = "uC_CustomerRegistration1";
             this.uC_CustomerRegistration1.Size = new System.Drawing.Size(1372, 620);
-            this.uC_CustomerRegistration1.TabIndex = 2;
+            this.uC_CustomerRegistration1.TabIndex = 0;
             // 
             // Dashboard
             // 
