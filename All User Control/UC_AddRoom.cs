@@ -57,6 +57,15 @@ namespace HotelManagementSystem1.All_User_Control
             txtBed.SelectedIndex = -1;
             txtPrice.Clear();
         }
-            
+
+        private void UC_AddRoom_Leave(object sender, EventArgs e)
+        {
+            clearAll();
+        }
+
+        private void UC_AddRoom_Enter(object sender, EventArgs e)
+        {
+            btnAddRoom_Click(null, null);//By entering in AddRoom tab, the form will be loaded.
+        }
     }
 }
