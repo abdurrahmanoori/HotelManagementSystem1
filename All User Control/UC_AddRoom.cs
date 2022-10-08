@@ -46,7 +46,7 @@ namespace HotelManagementSystem1.All_User_Control
             }
             else
             {
-                MessageBox.Show("Fill All Fields", "Warring!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Fill All Fields noori", "Warring!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -65,7 +65,8 @@ namespace HotelManagementSystem1.All_User_Control
 
         private void UC_AddRoom_Enter(object sender, EventArgs e)
         {
-            btnAddRoom_Click(null, null);//By entering in AddRoom tab, the form will be loaded.
+            //btnAddRoom_Click(null, null);//By entering in AddRoom tab, the form will be loaded.
+            UC_AddRoom_Load(null, null);
         }
     }
 }

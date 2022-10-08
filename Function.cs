@@ -28,7 +28,7 @@ namespace HotelManagementSystem1
             da.Fill(ds);
             return ds;
         }
-
+        
         public void setData(String qurey, String message)
         {
             SqlConnection con = GetConnection();
@@ -39,7 +39,18 @@ namespace HotelManagementSystem1
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show(" '" + message + "' ", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        public SqlDataReader getForCombo(string query)
+        {
+            SqlConnection con = GetConnection();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            con.Open();
+            cmd = new SqlCommand(query, con);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            return sdr;
 
         }
+
     }
 }
