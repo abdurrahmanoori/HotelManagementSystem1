@@ -31,6 +31,7 @@ namespace HotelManagementSystem1
             panelMoving.Left = btnAddRoom.Left;
             panelMoving.Visible = true;
             uC_AddRoom1.Visible = true;
+            uC_AddRoom1.BringToFront();
             uC_CustomerRegistration1.Visible = false;
             
 
@@ -46,6 +47,8 @@ namespace HotelManagementSystem1
 
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
+            uC_CustomerCheckOut1.Visible = true;
+            uC_CustomerCheckOut1.BringToFront();
             panelMoving.Left = btnCheckOut.Left;
             panelMoving.Visible = true;
         }

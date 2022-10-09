@@ -54,8 +54,8 @@
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtRoomNo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtPrice = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnAllocateRoom = new Guna.UI2.WinForms.Guna2Button();
+            this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -403,22 +403,6 @@
             this.guna2HtmlLabel13.TabIndex = 2;
             this.guna2HtmlLabel13.Text = "Price";
             // 
-            // txtPrice
-            // 
-            this.txtPrice.BackColor = System.Drawing.Color.Transparent;
-            this.txtPrice.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtPrice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtPrice.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrice.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold);
-            this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtPrice.ItemHeight = 30;
-            this.txtPrice.Location = new System.Drawing.Point(873, 379);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(371, 36);
-            this.txtPrice.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txtPrice.TabIndex = 3;
-            // 
             // btnAllocateRoom
             // 
             this.btnAllocateRoom.BackColor = System.Drawing.Color.White;
@@ -435,12 +419,33 @@
             this.btnAllocateRoom.FillColor = System.Drawing.Color.White;
             this.btnAllocateRoom.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllocateRoom.ForeColor = System.Drawing.Color.Black;
-            this.btnAllocateRoom.Location = new System.Drawing.Point(1058, 421);
+            this.btnAllocateRoom.Location = new System.Drawing.Point(1058, 429);
             this.btnAllocateRoom.Name = "btnAllocateRoom";
             this.btnAllocateRoom.Size = new System.Drawing.Size(186, 45);
             this.btnAllocateRoom.TabIndex = 5;
             this.btnAllocateRoom.Text = "Allocate Room";
             this.btnAllocateRoom.Click += new System.EventHandler(this.btnAllocateRoom_Click);
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrice.DefaultText = "";
+            this.txtPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrice.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrice.Location = new System.Drawing.Point(875, 381);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(5);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.PasswordChar = '\0';
+            this.txtPrice.PlaceholderText = "Price";
+            this.txtPrice.SelectedText = "";
+            this.txtPrice.Size = new System.Drawing.Size(371, 46);
+            this.txtPrice.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtPrice.TabIndex = 0;
             // 
             // UC_CustomerRegistration
             // 
@@ -451,7 +456,6 @@
             this.Controls.Add(this.txtCheckIn);
             this.Controls.Add(this.txtDob);
             this.Controls.Add(this.txtBed);
-            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtRoomNo);
             this.Controls.Add(this.txtRoom);
             this.Controls.Add(this.guna2HtmlLabel13);
@@ -471,6 +475,7 @@
             this.Controls.Add(this.txtNationality);
             this.Controls.Add(this.txtContact);
             this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtIdProof);
             this.Controls.Add(this.txtName);
             this.Name = "UC_CustomerRegistration";
@@ -506,8 +511,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Guna.UI2.WinForms.Guna2ComboBox txtPrice;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
         private Guna.UI2.WinForms.Guna2Button btnAllocateRoom;
+        private Guna.UI2.WinForms.Guna2TextBox txtPrice;
     }
 }

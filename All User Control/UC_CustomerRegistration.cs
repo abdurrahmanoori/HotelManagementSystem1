@@ -67,7 +67,9 @@ namespace HotelManagementSystem1.All_User_Control
                 string address = txtAddress.Text;
                 string checkin = txtCheckIn.Text;
 
-                query = "INSERT INTO customer (cname,mobile,nationality,gender,dob,idproof,address,checkin,roomid) VALUES ('" + name + "'," + mobile + ",'" + national + "','" + gender + "','" + dob + "','" + idproof + "','" + address + "','" + checkin + "'," + rid + ")UPDATE rooms SET booked ='YES' WHERE roomnO ='" + txtRoomNo.Text + "'";
+                query = "INSERT INTO customer (cname,mobile,nationality,gender,dob,idproof,addres,checkin,roomid) VALUES ('" + name + "'," + mobile + ",'" + national + "','" + gender + "','" + dob + "','" + idproof + "','" + address + "','" + checkin + "'," + rid + ")UPDATE rooms SET booked ='YES' WHERE roomNo ='" + txtRoomNo.Text + "'";
+                fn.setData(query, "Room No" + txtRoom.Text + " Allocation Succcessfully");
+                clearAll();
             }
             else
             {
@@ -87,7 +89,7 @@ namespace HotelManagementSystem1.All_User_Control
             txtBed.SelectedIndex = -1;
             txtRoom.SelectedIndex = -1;
             txtRoomNo.Items.Clear();
-          //  txtPrice.
+            txtPrice.Clear();
 
         }
     }
